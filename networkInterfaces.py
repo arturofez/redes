@@ -58,7 +58,7 @@ for i in addrs:
 			elif stats[i].duplex == 1:
 				print("- Duplex mode: HALF-DUPLEX")
 			else:
-				print("- Duplex mode: unknown")
+				print("- Duplex mode: Unknown")
 			#Muestro la velocidad de la interfaz
 			print("- Speed (MB/s): " + str(stats[i].speed))
 			#Muestro el MTU
