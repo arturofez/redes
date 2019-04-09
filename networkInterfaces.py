@@ -49,10 +49,8 @@ for i in addrs:
 			#y la direccion de broadcast
 			if ip != None:
 				print("- IP: " + ip)
-				if nm != None:
-					print("- Netmask: " + nm)
-				if bc != None:
-					print("- Broadcast: " + bc)
+				print("- Netmask: " + str(nm))
+				print("- Broadcast: " + str(bc))
 
 			#Muestro si la interfaz es full-duplex o half-duplex, o desconocido
 			if stats[i].duplex == 2:
