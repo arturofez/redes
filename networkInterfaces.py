@@ -1,9 +1,9 @@
 #############################################
-#											#
-# Ejercicio 9, practica 1, version PYTHON	#
-# (Redes y Sistemas Distribuidos, UMA)		#
-# Autor: Arturo Fernandez Perez				#
-#											#
+#                                           #
+# Ejercicio 9, practica 1, version PYTHON   #
+# (Redes y Sistemas Distribuidos, UMA)      #
+# Autor: Arturo Fernandez Perez             #
+#                                           #
 #############################################
 
 import psutil
