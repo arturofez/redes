@@ -25,7 +25,7 @@ for i in addrs:
 			bc = t.broadcast
 
 		#Compruebo si tiene direccion MAC
-		if t.family == 18 or t.family == 17:
+		if t.family == psutil.AF_LINK:
 			mac = t.address
 			#Muestro el nombre de la interfaz y su direccion MAC
 			print(i + ": " + str.upper(mac), end =" ")
