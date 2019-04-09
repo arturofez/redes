@@ -1,8 +1,8 @@
 #############################################
 #											#
-# Ejercicio 9, práctica 1, versión PYTHON	#
+# Ejercicio 9, practica 1, version PYTHON	#
 # (Redes y Sistemas Distribuidos, UMA)		#
-# Autor: Arturo Fernández Pérez				#
+# Autor: Arturo Fernandez Perez				#
 #											#
 #############################################
 
@@ -25,7 +25,7 @@ for i in addrs:
 			bc = t.broadcast
 
 		#Compruebo si tiene direccion MAC
-		if t.family == 18:
+		if t.family == 18 or t.family == 17:
 			mac = t.address
 			#Muestro el nombre de la interfaz y su direccion MAC
 			print(i + ": " + str.upper(mac), end =" ")
@@ -45,12 +45,14 @@ for i in addrs:
 			else:
 				print("- (down)")
 
-			#Muestra (si tiene asingadas) la IP, la máscara de red
-			#y la dirección de broadcast
+			#Muestra (si tiene asingadas) la IP, la mascara de red
+			#y la direccion de broadcast
 			if ip != None:
 				print("- IP: " + ip)
-				print("- Netmask: " + nm)
-				print("- Broadcast: " + bc)
+				if nm != None:
+					print("- Netmask: " + nm)
+				if bc != None:
+					print("- Broadcast: " + bc)
 
 			#Muestro si la interfaz es full-duplex o half-duplex, o desconocido
 			if stats[i].duplex == 2:
